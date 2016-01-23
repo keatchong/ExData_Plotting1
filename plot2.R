@@ -20,6 +20,7 @@ dat$Date <- strptime(dat$Date,format = '%d/%m/%Y %H:%M:%S')
 with(dat, plot(Date,Global_active_power,type='l',xlab="",
      ylab="Global Active Power (kilowatts)"))
 
-# copy olot to png file 
+# copy plot to png file 
 dev.copy(device = png,filename="plot2.png", width = 480, height = 480)
 dev.off()
+
